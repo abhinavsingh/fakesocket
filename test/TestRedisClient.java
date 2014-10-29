@@ -9,10 +9,6 @@ public class TestRedisClient extends FakeSocket {
 
     private RedisClient client;
 
-    public TestRedisClient() {
-        super();
-    }
-
     @Before public void setUp() throws IOException {
         super.setUp();
         client = new RedisClient("localhost", 6379);
