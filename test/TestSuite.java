@@ -9,12 +9,12 @@ import junit.framework.JUnit4TestAdapter;
 })
 
 
-public class AllTests {
+public class TestSuite {
     public static void main(String[] args) {
         junit.textui.TestRunner.run(suite());
     }
 
     public static junit.framework.Test suite() {
-        return new JUnit4TestAdapter(AllTests.class);
+        return new JUnit4TestAdapter(TestSuite.class);
     }
 }
